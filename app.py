@@ -200,17 +200,17 @@ with st.sidebar:
     st.title("Streamlit Demo")
     st.write("このアプリは様々なStreamlit機能のデモです")
     
-  # 複数ページ実装
-st.subheader("ナビゲーション")
-st.page_link('app.py', label='Home', icon='🏠')
-st.page_link('pages/page1.py', label="📊 データ可視化")
-st.page_link('pages/page2.py',  label="📝 データ編集")
-st.page_link("pages/page3.py", label="📋 フォーム")
-    
-# 外部リンク
-st.divider()
-st.caption("参考リンク")
-st.page_link("https://docs.streamlit.io/develop/api-reference", label="🔗 Streamlit APIドキュメント")
+    # 複数ページ実装
+    st.subheader("ナビゲーション")
+    st.page_link('app.py', label='Home', icon='🏠')
+    st.page_link('pages/page1.py', label="📊 データ可視化")
+    st.page_link('pages/page2.py',  label="📝 データ編集")
+    st.page_link("pages/page3.py", label="📋 フォーム")
+        
+    # 外部リンク
+    st.divider()
+    st.caption("参考リンク")
+    st.page_link("https://docs.streamlit.io/develop/api-reference", label="🔗 Streamlit APIドキュメント")
 
 # メインコンテンツ
 st.title("Streamlit デモアプリケーション 👋")
