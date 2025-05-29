@@ -17,9 +17,9 @@ with st.sidebar:
     # ナビゲーション
     st.subheader("ナビゲーション")
     st.page_link("app_2.py", label="🏠 ホーム")
-    st.page_link("pages/page1.py", label="📊 データ可視化")
-    st.page_link("pages/page2.py", label="📝 データ編集")
-    st.page_link("pages/page4.py", label="📋 フォーム")
+    st.page_link("pages_2/page1.py", label="📊 データ可視化")
+    st.page_link("pages_2/page2.py", label="📝 データ編集")
+    st.page_link("pages_2/page4.py", label="📋 フォーム")
     
     # 外部リンク
     st.divider()
