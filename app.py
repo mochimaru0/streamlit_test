@@ -157,8 +157,8 @@ with st.popover('もっと詳しく見る'):
 
 # サイドバー
 with st.sidebar:
-    st.title('xxxxx')
-    st.write('xxxxx')
+    st.title("Streamlit Demo")
+    st.write("このアプリは様々なStreamlit機能のデモです")
 
 # notification
 agree = st.checkbox('同意しますか？')
@@ -172,7 +172,14 @@ if birthday:
     st.balloons()
 
 # 複数ページ実装
+st.subheader("ナビゲーション")
 st.page_link('app.py', label='Home', icon='🏠')
-st.page_link('pages/page1.py', label='Page1')
-st.page_link('pages/page2.py', label='Page2')
-st.page_link('https://docs.streamlit.io/develop/api-reference', label='StreamlitのAPIドキュメント')
+st.page_link('pages/page1.py', label="📊 データ可視化")
+st.page_link('pages/page2.py',  label="📝 データ編集")
+st.page_link("pages/page3.py", label="📋 フォーム")
+
+
+# 外部リンク
+st.divider()
+st.caption("参考リンク")
+st.page_link("https://docs.streamlit.io/develop/api-reference", label="🔗 Streamlit APIドキュメント")
